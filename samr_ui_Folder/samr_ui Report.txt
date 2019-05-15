@@ -1,0 +1,64 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: samr_ui.ai
+Color Mode: RGB color
+Color Profile: none
+Ruler Units: pixels
+Artboard Dimensions: 730 px x 803 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+S:\Google Drive\Web Ux Course 2019\sr handmade\3D9B75D2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 836K, 435 by 492 pixels
+Dimensions: 433.999 by 492 points 
+Resolution: 72.166 by 72 pixels per inch
+
+
+S:\Google Drive\Web Ux Course 2019\sr handmade\3D9B75CE.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1391K, 697 by 511 pixels
+Dimensions: 696.373 by 509.518 points 
+Resolution: 72.065 by 72.209 pixels per inch
+
+
+S:\Google Drive\Web Ux Course 2019\sr handmade\3D9B75D5.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1121K, 429 by 669 pixels
+Dimensions: 428.013 by 669 points 
+Resolution: 72.166 by 72 pixels per inch
