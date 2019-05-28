@@ -53,7 +53,7 @@
 
           var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 3000})
           // animate color and top border in relation to scroll position
-          .setTween("#portfolio image", {transform: "translate(-30%, 100%) rotate(90deg)"}) // the tween durtion can be omitted and defaults to 1
+          .setTween("#portfolio image", {transform: "translate(-30%, 100%) rotate(90deg)",opacity:"0"}) // the tween durtion can be omitted and defaults to 1
           .addTo(controller);
 
                     var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 2000})
@@ -147,4 +147,16 @@
           .setTween("#shp6",  {x:1192, y:0,z:0})
           .addTo(controller);
 
+  });
+
+  var section2Top = $('.section2').offset().top;
+	
+  window.addEventListener('wheel', function(e) {
+          var scrollTop = $(document).scrollTop();
+          if (e.deltaY > 0) {
+              console.log(scrollTop);
+                  if(scrollTop<section2Top){
+                          $('body,html').animate({scrollTop:section2Top});
+                  } 
+          }
   });
