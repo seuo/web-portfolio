@@ -46,32 +46,32 @@ p {
 .ui {
 	#portfolio {
 	opacity:0;  /* make things invisible upon start */
-  animation:fadeIn ease-in 1;
-  animation-fill-mode:forwards;
-  animation-delay:.3s;
-  animation-duration:.7s;
-        transition:.8s ease-in-out;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-delay:.3s;
+    animation-duration:.7s;
+    transition:.8s ease-in-out;
 }
   #cv {
 	opacity:0;  /* make things invisible upon start */
-  animation:fadeIn ease-in 1;
-  animation-fill-mode:forwards;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
     animation-delay:.6s;
-  animation-duration:.7s;
-        transition:.8s ease-in-out;
+    animation-duration:.7s;
+    transition:.8s ease-in-out;
   }
     #contact {
 	opacity:0;  /* make things invisible upon start */
-  animation:fadeIn ease-in 1;
-  animation-fill-mode:forwards;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
     animation-delay:.9s;
-  animation-duration:.7s;
-      transition:.8s ease-in-out;
+    animation-duration:.7s;
+    transition:.8s ease-in-out;
   }
 }
 
 
-  #portfolio:hover {
+#portfolio:hover {
     transform: scale(1.02);
     transition:.8s ease-in-out;
     transform-origin: right;
@@ -79,7 +79,7 @@ p {
     opacity:.85;
 }
 
-  #cv:hover {
+#cv:hover {
     transform: scale(1.02);
     transition:.8s ease-in-out;
     transform-origin: bottom;
@@ -94,35 +94,10 @@ p {
     cursor:pointer;
     filter: drop-shadow(0px 10px 5px rgba(0,0,0,1));
     opacity:.85;
-
 }
 
-// #contact image {
-//     transition:.8s ease-in-out;
-// }
-
-// #contact:hover image {
-//     opacity:.85;
-// }
-
-// #cv image {
-//     transition:.8s ease-in-out;
-// }
-
-// #cv:hover image {
-//     opacity:.85;
-// }
-
-// #portfolio image {
-//     transition:.8s ease-in-out;
-// }
-
-// #portfolio:hover image {
-//     opacity:.85;
-// }
-
 #contact polygon:first-of-type  {
-      transition:.2s ease-in;
+    transition:.2s ease-in;
 }
 
 #contact:hover polygon:first-of-type {
@@ -130,40 +105,21 @@ p {
 }
 
 #cv polygon:first-of-type {
-      transition:.2s ease-in;
+    transition:.2s ease-in;
 }
 
 #cv:hover polygon:first-of-type {
-      fill: #44678c !important;
+    fill: #44678c !important;
 }
 
 
 #portfolio g>polygon {
-      transition:.2s ease-in;
+    transition:.2s ease-in;
 }
 
 #portfolio g:hover>polygon {
     fill: #9a3156 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// g image {
-//       transition:.8s ease-in-out;
-// }
-
-// g image:hover{
-//   opacity:.8;
-// }
 
 
 #fullpage {
@@ -240,17 +196,6 @@ transform: rotate(-29.4deg) translate(-20%, 180%);
 }
 
 
-// .hero-section {
-// 	height:100vh;
-// 		z-index:7;
-// }
-
-// .cachu__section {
-// 	height:100vh;
-// }
-
-
-
 .scrollwrap {
 	width: 100%!important;
 	height: 100% !important;
@@ -323,8 +268,6 @@ transform: matrix(1, 0, 0, 1, 845, -875) scale(1.2) !important;
 .scrollmagic-pin-spacer {
 		clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
 }
-
-	
 
 
 .body {
