@@ -100,20 +100,18 @@
 
   var section2Top = $('.section2').offset().top;
 
-
-
-
   window.addEventListener('wheel', function(e) {
           var scrollTop = $(document).scrollTop();
 
         if (e.deltaY > 0) { ////wheel down
-              console.log(scrollTop);
+            console.log(scrollTop);
                   if(scrollTop<section2Top){
                           $('body,html').animate({scrollTop:section2Top});
                   }
           }
 
         if (e.deltaY < 0) { //wheel up
+            console.log(scrollTop);
                 if(scrollTop<section2Top){
                         $('body,html').animate({scrollTop:0});
                 }
