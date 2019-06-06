@@ -3,6 +3,10 @@
 	text-decoration: none;
 	border:none;
  }
+
+ html {
+    scroll-behavior: smooth;
+  }
 	
  	$font-stack: 'Roboto', sans-serif;
 	$primary-color: rgba(66, 66, 66, 1);
@@ -10,6 +14,8 @@
  h1,h2,h3,h4,h5 {
 	font-family: $font-stack;
 }
+
+
 
 @import "content.scss";
 
