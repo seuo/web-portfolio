@@ -1,83 +1,64 @@
 $(function () {
 
 
-    // sectionHeader animation 
-$(function(){
-    var hHover = anime({
-        targets: ['#portfolio'],
-        duration: 1,
-        scale:1.02,
-        autoplay: false,
-        easing: 'easeInOutQuad',
-        loop: false,
-      });
-
-      function over(){
-        hHover.play({
-          scale: 1,
-        });
-      }
-      function out(){
-        hHover.play({
-          scale: .98,
-        });
-      }
- 
-
-      $('#portfolio').hover(over,out);
-
-    });
-
     var tl1 = anime.timeline({
 
         easing:'linear',
         autoplay:false,
         duration:1000,
+        
  
     });
 
-    tl1.add ({
-        targets:'.ul',
-
-
-    },.1);
 
     tl1.add ({
-        targets:'#portfolio',
-        translateY:[0,'100vh'],
-        translateX:[0,'-40vw'],
+        targets:'#portfolioContainer',
+        translateY:[0,'120%'],
+        translateX:[0,'-30vw'],
         rotateY:[0,40],  
         rotateZ:[0,-5],
         rotateX:[0,55],
-
+        duration:900,
     },0);
     
     tl1.add ({
-        targets:'#contact',
-        translateY:[0,'100vh'],
+        targets:'#contactContainer',
+        translateY:[0,'200vh'],
         translateX:[0,'-15vw'],
-        rotate:[0,-30],
-
+        rotate:[0,-50],
+        opacity:[1,0],
     },0);
     tl1.add ({
-        targets:'#cv',
-        translateY:[0,'100vh'],
+        targets:'#cvContainer',
+        translateY:[0,'80vh'],
         translateX:[0,'-25vw'],
         rotate:[0,-15],
-
+        opacity:[1,0],
     },0);
 
+    tl1.add ({
+        targets:'#portfolio-border>polygon',
+        fill: '#333',
+        stroke:'#333',
+        opacity:[0,1],
+        duration:900,
+    },0)
+    // tl1.add ({
+    //     targets:'#Layer_1',
+    //     opacity:[1,0],
+    //     duration:1000,
+    // },);
 
 
 
-
+    var screenHeight = $(window).height();
     var s2anime = $('.headerSection').offset().top;
 
             $(document).on('scroll',function(){
             var scrollTop = $(document).scrollTop();
-            var progress = scrollTop;
+            var progress = scrollTop/screenHeight;
             tl1.seek(tl1.duration * progress);
-            console.log(tl1.duration);
+            console.log(progress);
             
         });
         

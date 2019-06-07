@@ -48,8 +48,11 @@ p {
 .fade-in.five {
   animation-delay: 6s;
 }
-
+#portfolioContainer {
+    transition:1s ease-in-out;
+}
 .ui {
+
 	#portfolio {
 	opacity:0;  /* make things invisible upon start */
     animation:fadeIn ease-in 1;
