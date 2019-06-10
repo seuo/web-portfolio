@@ -1,5 +1,18 @@
 $(function () {
 
+    var animeElement = anime.timeline({
+        easing:'linear',
+        autoplay:true,
+        duration:1000,
+        loop: true,
+        direction: 'alternate',
+    })
+    animeElement.add({
+        targets: '.element1 img',
+        translateY: [10,0],
+        easing: 'easeInOutSine'
+      });
+      
 
     var tl1 = anime.timeline({
 
@@ -13,12 +26,12 @@ $(function () {
 
     tl1.add ({
         targets:'#portfolioContainer',
-        translateY:[0,'120%'],
-        translateX:[0,'-30vw'],
+        translateY:[0,'150%'],
+        translateX:[0,'-25vw'],
         rotateY:[0,40],  
         rotateZ:[0,-5],
         rotateX:[0,55],
-        duration:900,
+        opacity:[1,0],
     },0);
     
     tl1.add ({
@@ -36,21 +49,6 @@ $(function () {
         opacity:[1,0],
     },0);
 
-    tl1.add ({
-        targets:'#portfolio-border>polygon',
-        fill: '#333',
-        stroke:'#333',
-        opacity:[0,1],
-        duration:900,
-    },0)
-    // tl1.add ({
-    //     targets:'#Layer_1',
-    //     opacity:[1,0],
-    //     duration:1000,
-    // },);
-
-
-
     var screenHeight = $(window).height();
     var s2anime = $('.headerSection').offset().top;
 
@@ -67,35 +65,35 @@ $(function () {
 
 
 
-    var section2Top = $('.s2').offset().top;
+    // var section2Top = $('.s2').offset().top;
 
-    window.addEventListener('wheel', function(e) {
-            var scrollTop = $(document).scrollTop();
+    // window.addEventListener('wheel', function(e) {
+    //         var scrollTop = $(document).scrollTop();
   
-        if (e.deltaY > 0) { ////wheel down
-            console.log(scrollTop);
+    //     if (e.deltaY > 0) { ////wheel down
+    //         console.log(scrollTop);
 
-                if(scrollTop<section2Top){
-                    $('body,html').animate({
-                        scrollTop:section2Top,
-                }
-                , 750, 'linear', function() {
-                    // Animation complete.
-                  });
-            }
-        }
+    //             if(scrollTop<section2Top){
+    //                 $('body,html').animate({
+    //                     scrollTop:section2Top,
+    //             }
+    //             , 750, 'linear', function() {
+    //                 // Animation complete.
+    //               });
+    //         }
+    //     }
   
-        if (e.deltaY < 0) { //wheel up
-            console.log(scrollTop);
-                if(scrollTop<section2Top){
-                    $('body,html').animate({
-                        scrollTop:0,
-                    });
+    //     if (e.deltaY < 0) { //wheel up
+    //         console.log(scrollTop);
+    //             if(scrollTop<section2Top){
+    //                 $('body,html').animate({
+    //                     scrollTop:0,
+    //                 });
 
-            }
-        }
+    //         }
+    //     }
 
 
         
-    });
+    // });
 

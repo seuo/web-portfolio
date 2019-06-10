@@ -4,6 +4,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif;
 }
@@ -371,6 +375,8 @@ p {
           animation-duration: .7s;
   -webkit-transition: .8s ease-in-out;
   transition: .8s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 #portfolio:hover {
@@ -433,16 +439,6 @@ p {
 
 #portfolio g:hover > polygon {
   fill: #9a3156 !important;
-}
-
-#fullpage {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 220, 0.3)), color-stop(15%, rgba(237, 252, 255, 0.3)), color-stop(30%, rgba(255, 237, 250, 0.3)), color-stop(45%, rgba(255, 237, 237, 0.3)), color-stop(60%, rgba(255, 246, 237, 0.3)), color-stop(75%, rgba(255, 252, 237, 0.3)), color-stop(90%, rgba(253, 255, 237, 0.3)), to(rgba(242, 242, 237, 0.3)));
-  background: linear-gradient(180deg, rgba(220, 220, 220, 0.3) 0%, rgba(237, 252, 255, 0.3) 15%, rgba(255, 237, 250, 0.3) 30%, rgba(255, 237, 237, 0.3) 45%, rgba(255, 246, 237, 0.3) 60%, rgba(255, 252, 237, 0.3) 75%, rgba(253, 255, 237, 0.3) 90%, rgba(242, 242, 237, 0.3) 100%);
-}
-
-.trigger1 {
-  position: absolute;
-  top: 50vh;
 }
 
 .section-head1 {
@@ -520,81 +516,11 @@ p {
   z-index: 1;
 }
 
-.scrollwrap {
-  width: 100% !important;
-  height: 100% !important;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.panel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 11;
-}
-
-.psec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 60%;
-          flex: 1 0 60%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-transform: scale(0.65);
-          transform: scale(0.65);
-}
-
-.psec .trigger3 {
-  position: absolute;
-  top: 150vh;
-}
-
-.psec .w1-svg:hover {
+.w1-svg:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
-}
-
-.psec .w1-svg {
-  height: 100vh;
-  width: 100%;
-  opacity: 0;
-}
-
-.psec .w1-svg #shp1 image:hover {
-  -webkit-transform: matrix(1, 0, 0, 1, 845, -875) scale(1.2) !important;
-          transform: matrix(1, 0, 0, 1, 845, -875) scale(1.2) !important;
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: .7s ease-in-out;
-  transition: .7s ease-in-out;
-}
-
-.scrollmagic-pin-spacer {
-  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
-          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
 }
 
 .body {
@@ -606,8 +532,9 @@ p {
   height: 100vh;
 }
 
-.section .s1 {
+.s2 {
   height: 100vh;
+  background-color: #cdcdcd;
 }
 
 .c1 {
@@ -772,6 +699,35 @@ svg {
 
 .ui {
   height: 100vh;
+}
+
+.platform1 {
+  -webkit-clip-path: polygon(5% 20%, 90% 40%, 83% 90%, 0 100%);
+          clip-path: polygon(5% 20%, 90% 40%, 83% 90%, 0 100%);
+  width: 30vw;
+  background-color: #dcdcdc;
+  height: 75vh;
+  position: absolute;
+  -webkit-transform: translate(12vw, 0);
+          transform: translate(12vw, 0);
+  -webkit-filter: drop-shadow(16px 16px 20px red);
+          filter: drop-shadow(16px 16px 20px red);
+}
+
+.element1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  position: absolute;
+  overflow: hidden;
+  width: 20vw;
+  -webkit-transform: translate(18vw, 75%);
+          transform: translate(18vw, 75%);
+  -webkit-filter: drop-shadow(0em 0.5em 0.5em rgba(51, 51, 51, 0.5));
+          filter: drop-shadow(0em 0.5em 0.5em rgba(51, 51, 51, 0.5));
+}
+
+.element1 img {
+  width: 75%;
 }
 
 @media only screen and (max-width: 100em) {
