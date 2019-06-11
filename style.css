@@ -534,7 +534,108 @@ p {
 
 .s2 {
   height: 100vh;
-  background-color: #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.s2 .sCol1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 35%;
+          flex: 1 0 35%;
+}
+
+.s2 .sCol2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.s2 .sCol2 .info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.s2 .sCol2 .info h2 {
+  padding-bottom: .2em;
+}
+
+.s2 .sCol2 .info p {
+  width: 50%;
+}
+
+.platform1 {
+  -webkit-clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
+          clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
+  width: 30vw;
+  background-color: #dcdcdc;
+  height: 100vh;
+  position: absolute;
+  -webkit-transform: translate(12vw, 0);
+          transform: translate(12vw, 0);
+  -webkit-filter: drop-shadow(16px 16px 20px red);
+          filter: drop-shadow(16px 16px 20px red);
+}
+
+.element1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20em;
+  height: 22em;
+  padding: 1em 2em 2em 2em;
+  -webkit-transform: translate(18vw, 75%);
+          transform: translate(18vw, 75%);
+}
+
+.element1 h1 {
+  -webkit-transform: translate(0, -3em);
+          transform: translate(0, -3em);
+  font-size: 6em;
+  position: absolute;
+  width: 50vw;
+  color: #1fb2d0;
+}
+
+.element1 img {
+  width: 75%;
+  -webkit-transition: ease-in-out all 1s;
+  transition: ease-in-out all 1s;
+  width: 75%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: drop-shadow(0em 1em 0.3em rgba(51, 51, 51, 0.3));
+          filter: drop-shadow(0em 1em 0.3em rgba(51, 51, 51, 0.3));
+}
+
+.element1 img:hover {
+  width: 75%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: drop-shadow(0em 1.2em 0.5em rgba(51, 51, 51, 0.3));
+          filter: drop-shadow(0em 1.2em 0.5em rgba(51, 51, 51, 0.3));
 }
 
 .c1 {
@@ -699,35 +800,6 @@ svg {
 
 .ui {
   height: 100vh;
-}
-
-.platform1 {
-  -webkit-clip-path: polygon(5% 20%, 90% 40%, 83% 90%, 0 100%);
-          clip-path: polygon(5% 20%, 90% 40%, 83% 90%, 0 100%);
-  width: 30vw;
-  background-color: #dcdcdc;
-  height: 75vh;
-  position: absolute;
-  -webkit-transform: translate(12vw, 0);
-          transform: translate(12vw, 0);
-  -webkit-filter: drop-shadow(16px 16px 20px red);
-          filter: drop-shadow(16px 16px 20px red);
-}
-
-.element1 {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-  position: absolute;
-  overflow: hidden;
-  width: 20vw;
-  -webkit-transform: translate(18vw, 75%);
-          transform: translate(18vw, 75%);
-  -webkit-filter: drop-shadow(0em 0.5em 0.5em rgba(51, 51, 51, 0.5));
-          filter: drop-shadow(0em 0.5em 0.5em rgba(51, 51, 51, 0.5));
-}
-
-.element1 img {
-  width: 75%;
 }
 
 @media only screen and (max-width: 100em) {

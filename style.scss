@@ -209,7 +209,74 @@ position: relative;
 }
 .s2 {
     height: 100vh;
-    background-color:#cdcdcd;
+    display: flex;
+    flex-direction: row;
+    // clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
+     .sCol1 {
+         display: flex;
+         flex:1 0 35%;
+     }
+     .sCol2 {
+        display: flex;
+        flex:1 0 50%;
+        .info {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                padding-bottom:.2em;
+            }
+            p {
+                width: 50%;
+            }
+        }
+    }
+    // background-color:#cdcdcd;
+}
+
+.platform1 {
+    clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
+    width: 30vw;
+    background-color: #dcdcdc;
+    height: 100vh;
+    position: absolute;
+    transform: translate(12vw,0);
+    filter: drop-shadow(16px 16px 20px red);
+}
+
+.element1 {
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    width: 20em;
+    height: 22em;
+    padding: 1em 2em 2em 2em;
+    transform: translate(18vw,75%);
+    h1 {
+        transform: translate(0, -3em);
+        font-size: 6em;
+        position: absolute;
+        width: 50vw;
+        color: #1fb2d0;
+    }
+img {
+    width:75%;
+    transition: ease-in-out all 1s;
+    width:75%;
+
+    // transform: translate(18vw,75%);
+    transform: scale(1.1);
+    filter: drop-shadow(0em 1em .3em rgba(51, 51, 51, 0.3));
+}
+}
+
+.element1 img:hover {
+    width:75%;
+    transform: scale(1.2);
+    filter: drop-shadow(0em 1.2em .5em rgba(51, 51, 51, 0.3));
 }
 
 
@@ -350,28 +417,6 @@ svg {
 
 }
 
-.platform1 {
-    clip-path: polygon(5% 20%, 90% 40%, 83% 90%, 0 100%);
-    width: 30vw;
-    background-color: #dcdcdc;
-    height: 75vh;
-    position: absolute;
-    transform: translate(12vw,0);
-    filter: drop-shadow(16px 16px 20px red);
-}
-
-.element1 {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-    position: absolute;
-    overflow: hidden;
-    width: 20vw;
-    transform: translate(18vw,75%);
-    filter: drop-shadow(0em .5em .5em rgba(51, 51, 51, 0.5));
-img {
-    width:75%;
-}
-}
 
 @media only screen and (max-width: 100em) {
 .c1 {

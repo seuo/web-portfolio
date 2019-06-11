@@ -8,7 +8,7 @@ $(function () {
         direction: 'alternate',
     })
     animeElement.add({
-        targets: '.element1 img',
+        targets: '.element1 img:hover',
         translateY: [10,0],
         easing: 'easeInOutSine'
       });
@@ -27,11 +27,13 @@ $(function () {
     tl1.add ({
         targets:'#portfolioContainer',
         translateY:[0,'150%'],
-        translateX:[0,'-25vw'],
+        translateX:[0,'-50vw'],
+        scale:[1,2],
         rotateY:[0,40],  
         rotateZ:[0,-5],
-        rotateX:[0,55],
+        rotateX:[0,75],
         opacity:[1,0],
+        fill:'#333',
     },0);
     
     tl1.add ({
@@ -50,7 +52,7 @@ $(function () {
     },0);
 
     var screenHeight = $(window).height();
-    var s2anime = $('.headerSection').offset().top;
+    var s1anime = $('.headerSection').offset().top;
 
             $(document).on('scroll',function(){
             var scrollTop = $(document).scrollTop();
@@ -59,8 +61,28 @@ $(function () {
             console.log(progress);
             
         });
-        
+        var tl2 = anime.timeline({
+            easing:'linear',
+            autoplay:false,
+            duration:1000,
+    
+        });
+    
+        tl2.add ({
+            targets:'.s2',
+            backgroundColor:'#111', 
+        },0);
+
+        var screenHeight = $(window).height();
+        var s2anime = $('.s2').offset().top;
+            $(document).on('scroll',function(){
+            var scrollTop = $(document).scrollTop();
+            var progress = scrollTop/screenHeight;
+            tl2.seek(tl1.duration * progress);
+        });
     });
+
+
 
 
 
