@@ -8,7 +8,8 @@
     scroll-behavior: smooth;
   }
 	
- 	$font-stack: 'Roboto', sans-serif;
+     $font-stack: 'Roboto', sans-serif;
+     $font-stack-alt: 'Roboto', sans-serif;
 	$primary-color: rgba(66, 66, 66, 1);
 
  h1,h2,h3,h4,h5 {
@@ -20,7 +21,7 @@
 @import "content.scss";
 
 p {
- 	font-family: $font-stack;
+ 	font-family: $font-stack-alt;
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -215,6 +216,7 @@ position: relative;
      .sCol1 {
          display: flex;
          flex:1 0 35%;
+         align-items:center;
      }
      .sCol2 {
         display: flex;
@@ -235,13 +237,21 @@ position: relative;
 }
 
 .platform1 {
-    clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
-    width: 30vw;
+    transform: perspective(50em) rotateX(0deg) rotateY(35deg) rotateZ(0deg)  translate(12vw,0);
+    // clip-path: polygon(0% 20%, 85% 34%, 85% 80%, 0 91%);
+    width: 40vw;
     background-color: #dcdcdc;
-    height: 100vh;
+    height: 50vh;
     position: absolute;
-    transform: translate(12vw,0);
-    filter: drop-shadow(16px 16px 20px red);
+    // transform: translate(12vw,0);
+    // filter: drop-shadow(16px 16px 20px red);
+}
+
+.info {
+    p{
+        font-size:1.5em;
+
+    }
 }
 
 .element1 {
@@ -254,13 +264,14 @@ position: relative;
     width: 20em;
     height: 22em;
     padding: 1em 2em 2em 2em;
-    transform: translate(18vw,75%);
+    transform: translate(18vw, 0%);
     h1 {
-        transform: translate(0, -3em);
         font-size: 6em;
         position: absolute;
         width: 50vw;
         color: #1fb2d0;
+        bottom:-5em;
+        // transition:1.5s;
     }
 img {
     width:75%;
@@ -343,7 +354,8 @@ img {
 				font-size:2.375em;
 				color:rgba(0,0,0,0.57);
 				width: 10em;
-				margin-left: 5.4em;
+                margin-left: 5.4em;
+
 			}
 
 			}

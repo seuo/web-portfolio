@@ -65,7 +65,7 @@ $(function () {
             easing:'linear',
             autoplay:false,
             duration:1000,
-    
+            direction: 'alternate',
         });
     
         tl2.add ({
@@ -73,8 +73,21 @@ $(function () {
             backgroundColor:'#111', 
         },0);
 
+        tl2.add ({
+            targets:'.element1 h1',
+            bottom:['-5em','2em'],
+            duration:2000,
+        },0);
+
+        tl2.add ({
+            targets:'.info',
+            color:'#cdcdcd',
+        },0);
+
         var screenHeight = $(window).height();
+
         var s2anime = $('.s2').offset().top;
+
             $(document).on('scroll',function(){
             var scrollTop = $(document).scrollTop();
             var progress = scrollTop/screenHeight;

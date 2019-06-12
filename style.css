@@ -550,6 +550,9 @@ p {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 35%;
           flex: 1 0 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .s2 .sCol2 {
@@ -583,16 +586,16 @@ p {
 }
 
 .platform1 {
-  -webkit-clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
-          clip-path: polygon(5% 20%, 95% 40%, 85% 80%, 0 90%);
-  width: 30vw;
+  -webkit-transform: perspective(50em) rotateX(0deg) rotateY(35deg) rotateZ(0deg) translate(12vw, 0);
+          transform: perspective(50em) rotateX(0deg) rotateY(35deg) rotateZ(0deg) translate(12vw, 0);
+  width: 40vw;
   background-color: #dcdcdc;
-  height: 100vh;
+  height: 50vh;
   position: absolute;
-  -webkit-transform: translate(12vw, 0);
-          transform: translate(12vw, 0);
-  -webkit-filter: drop-shadow(16px 16px 20px red);
-          filter: drop-shadow(16px 16px 20px red);
+}
+
+.info p {
+  font-size: 1.5em;
 }
 
 .element1 {
@@ -606,17 +609,16 @@ p {
   width: 20em;
   height: 22em;
   padding: 1em 2em 2em 2em;
-  -webkit-transform: translate(18vw, 75%);
-          transform: translate(18vw, 75%);
+  -webkit-transform: translate(18vw, 0%);
+          transform: translate(18vw, 0%);
 }
 
 .element1 h1 {
-  -webkit-transform: translate(0, -3em);
-          transform: translate(0, -3em);
   font-size: 6em;
   position: absolute;
   width: 50vw;
   color: #1fb2d0;
+  bottom: -5em;
 }
 
 .element1 img {
