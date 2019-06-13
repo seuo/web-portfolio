@@ -108,21 +108,14 @@ $(function () {
             duration:1000,
             direction: 'alternate',
             loop: true,
-            loopBegin: function(anim) {
-                loopBegan++;
-                beginLogEl.value = 'loop began : ' + loopBegan;
-              },
-              loopComplete: function(anim) {
-                loopCompleted++;
-                completeLogEl.value = 'loop completed : ' + loopCompleted;
-              }
         });
         
-
-        // tl2.add ({
-        //     targets:'.s2',
-        //     backgroundColor:['#fff','rgb(251, 249, 237)'], 
-        // },0);
+        tl2.add ({
+            targets:'.s2',
+            marginTop:['0vh','10vh'],
+            opacity:[1,.7],
+            scale:[1,.9],
+        },0);
 
         tl2.add ({
             targets:'.element1',
@@ -146,8 +139,8 @@ $(function () {
         },0);
 
         tl2.add ({
-            targets:'.logoWork',
-            translateY:['7vh','-3vh']
+            targets:'.s2 .logoWork',
+            marginTop:['7vh','-1vh']
             
         },0);
 
@@ -158,19 +151,114 @@ $(function () {
 
 
 
-        var screenHeight = $(window).height();
 
-        var s2anime = $('.section').offset().top;
+
+
+        var s2anime = $('.s2').offset().top;
 
         $(document).on('scroll',function(){
             var scrollTop = $(document).scrollTop();
     
-            var progress = ((scrollTop-s2anime+100)/500);
+            var progress = ((scrollTop-s2anime-100)/500);
     
             tl2.seek(tl2.duration * progress);
         });
 
+
+        var tl3 = anime.timeline({
+            easing:'linear',
+            autoplay:false,
+            duration:1000,
+            direction: 'alternate',
+            loop: true,
+        });
+
+        tl3.add ({
+            targets:'.s3',
+            marginTop:['0vh','10vh'],
+            opacity:[1,.7],
+            scale:[1,.9],
+        },0);
         
+        tl3.add ({
+            targets:'.s3 .logoWork',
+            marginTop:['7vh','-3vh'],
+        },0);
+
+
+        var s3anime = $('.s3').offset().top;
+
+        $(document).on('scroll',function(){
+            var scrollTop = $(document).scrollTop();
+    
+            var progress = ((scrollTop-s3anime-100)/500);
+    
+            tl3.seek(tl3.duration * progress);
+        });
+
+
+        var tl4 = anime.timeline({
+            easing:'linear',
+            autoplay:false,
+            duration:1000,
+            direction: 'alternate',
+            loop: true,
+        });
+
+        tl4.add ({
+            targets:'.s4',
+            marginTop:['0vh','10vh'],
+            opacity:[1,.7],
+            scale:[1,.9],
+        },0);
+        
+        tl4.add ({
+            targets:'.s4 .logoWork',
+            marginTop:['7vh','-3vh'],
+        },0);
+
+
+        var s4anime = $('.s4').offset().top;
+
+        $(document).on('scroll',function(){
+            var scrollTop = $(document).scrollTop();
+    
+            var progress = ((scrollTop-s4anime-100)/500);
+    
+            tl4.seek(tl4.duration * progress);
+        });
+        
+        var tl5 = anime.timeline({
+            easing:'linear',
+            autoplay:false,
+            duration:1000,
+            direction: 'alternate',
+            loop: true,
+        });
+
+        tl5.add ({
+            targets:'.s5',
+            marginTop:['0vh','10vh'],
+            opacity:[1,.7],
+            scale:[1,.9],
+        },0);
+        
+        tl5.add ({
+            targets:'.s5 .logoWork',
+            marginTop:['7vh','-3vh'],
+        },0);
+
+
+        var s5anime = $('.s5').offset().top;
+
+        $(document).on('scroll',function(){
+            var scrollTop = $(document).scrollTop();
+    
+            var progress = ((scrollTop-s5anime-100)/500);
+    
+            tl5.seek(tl4.duration * progress);
+        });
+
         
     });
 

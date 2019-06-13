@@ -271,12 +271,17 @@ p {
   height: 100vh;
 }
 
+.s2 {
+  background-color: #fbf9ed;
+}
+
 .platform1 {
   -webkit-transform: perspective(45vw) rotateX(0deg) rotateY(25deg) rotateZ(0deg) translate(8vw, 0) scale(0.9);
           transform: perspective(45vw) rotateX(0deg) rotateY(25deg) rotateZ(0deg) translate(8vw, 0) scale(0.9);
   height: 40vh;
   -webkit-transition: ease all 1.5s;
   transition: ease all 1.5s;
+  width: 82%;
 }
 
 .platform1 .webWork {
@@ -339,6 +344,8 @@ p {
 }
 
 .platform2 .logoWork {
+  -webkit-transform: translateY(7vh);
+          transform: translateY(7vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +393,7 @@ p {
 }
 
 .element1 h1 {
-  font-size: 6em;
+  font-size: 4vw;
   width: 40vw;
   color: #dd2149;
 }
@@ -528,6 +535,8 @@ p {
 }
 
 .section .sColAlt1 .platform2 .logoWork {
+  -webkit-transform: translateY(7vh);
+          transform: translateY(7vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,6 +671,36 @@ p {
 
 .s4 .platform1:hover {
   margin-bottom: 18vh;
+}
+
+.s5 .webWork {
+  -webkit-box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0) inset;
+          box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0) inset;
+  background-image: url("assets/the-cabin-crew-bcards.jpg");
+  overflow: hidden;
+}
+
+.s5 .webWork img {
+  width: 100%;
+}
+
+.s5 .webWork:hover {
+  overflow: hidden;
+}
+
+.s5 .logoWork {
+  top: -10em;
+  width: 100%;
+}
+
+.s5 .logoWork img {
+  width: 100%;
+  padding: 0em !important;
+  background-color: #303030;
+  border: solid 0em #303030 !important;
+  margin-left: 15em;
+  -webkit-box-shadow: -2em 1em 2em -1em #33333340;
+          box-shadow: -2em 1em 2em -1em #33333340;
 }
 
 .webWork:hover {
