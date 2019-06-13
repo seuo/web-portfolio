@@ -258,6 +258,10 @@ p {
   transition: .7s ease-in-out;
 }
 
+.wrap {
+  background: #fbf9ed;
+}
+
 .body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -508,7 +512,7 @@ p {
 }
 
 .section .sColAlt1 .platform1:hover {
-  margin-bottom: 15vh;
+  margin-bottom: 18vh;
   -webkit-box-shadow: 0em 5em 3em -3em rgba(0, 0, 0, 0.3);
           box-shadow: 0em 5em 3em -3em rgba(0, 0, 0, 0.3);
   -webkit-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-9vw, 0) scale(1.1);
@@ -550,18 +554,6 @@ p {
   pointer-events: none;
 }
 
-.section .sColAlt1 .webWork {
-  -webkit-box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
-          box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
-  background-image: url("assets/10squares-site.jpg");
-}
-
-.section .sColAlt1 .webWork:hover {
-  overflow-y: scroll;
-  -webkit-box-shadow: 1px -99px 60px -16px rgba(0, 0, 0, 0) inset;
-          box-shadow: 1px -99px 60px -16px rgba(0, 0, 0, 0) inset;
-}
-
 .section .sColAlt1 .platform2:hover {
   -webkit-transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0vw, -10vh) scale(1.2);
           transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0vw, -10vh) scale(1.2);
@@ -573,7 +565,7 @@ p {
 }
 
 .section .sColAlt1 .platform3 .element1 {
-  padding: 1em 2em 2em 2em;
+  padding: 1em 1em 1em 1em;
   -webkit-transform: translate(-40vw, 0%);
           transform: translate(-40vw, 0%);
   position: absolute;
@@ -635,6 +627,47 @@ p {
   font-weight: 300;
   -webkit-transform: translate(4vw, 0px);
           transform: translate(4vw, 0px);
+}
+
+.s3 .webWork {
+  -webkit-box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+  background-image: url("assets/10squares-site.jpg");
+}
+
+.s4 .logoWork {
+  top: -10em;
+  width: 40%;
+}
+
+.s4 .logoWork img {
+  width: 55%;
+  padding: 1em;
+  background-color: #fdfdfd;
+  border: solid .4em #333;
+  margin-left: 34em;
+  -webkit-box-shadow: -2em 1em 2em -1em #33333340;
+          box-shadow: -2em 1em 2em -1em #33333340;
+}
+
+.s4 .webWork {
+  -webkit-box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+  background-image: url("assets/gubba-site.jpg");
+}
+
+.s4 .sCol2 .info p {
+  width: 30em;
+}
+
+.s4 .platform1:hover {
+  margin-bottom: 18vh;
+}
+
+.webWork:hover {
+  overflow-y: scroll;
+  -webkit-box-shadow: 1px -99px 60px -16px rgba(0, 0, 0, 0) inset;
+          box-shadow: 1px -99px 60px -16px rgba(0, 0, 0, 0) inset;
 }
 
 .c1 {

@@ -29,7 +29,6 @@ $(function () {
                       });
             }
         }
-
     });
 
     var animeElement = anime.timeline({

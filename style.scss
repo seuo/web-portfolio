@@ -22,6 +22,8 @@ p {
  	font-family: $font-stack-alt;
 }
 
+
+
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
@@ -199,14 +201,18 @@ position: relative;
 	  transition:.7s ease-in-out;
 }
 
+.wrap {
+    background: #fbf9ed;
+}
+
 .body {
 		font-size:16px;
 		font-family: $font-stack;
 }
 
+
 .headerSection { height: 100vh;
 }
-
 
 
 .platform1 {
@@ -383,7 +389,7 @@ position: relative;
             transition:ease all 1.5s;
          }
          .platform1:hover {
-            margin-bottom: 15vh;
+            margin-bottom: 18vh;
             box-shadow: 0em 5em 3em -3em rgba(0,0,0,0.3);
             transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-9vw, 0) scale(1.1);
         }
@@ -410,14 +416,7 @@ position: relative;
             cursor: pointer;  
             pointer-events:none;
         }
-        .webWork {
-            box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
-            background-image:url("assets/10squares-site.jpg")
-        }
-        .webWork:hover { 
-            overflow-y: scroll;
-            box-shadow: 1px -99px 60px -16px rgba(0,0,0,0) inset;
-        }
+
         
         .platform2:hover {
             transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0vw, -10vh) scale(1.2);
@@ -425,9 +424,10 @@ position: relative;
         .platform3 {
             transform: translate(-10em, 0vh) scale(1);
             .element1 {
-                padding: 1em 2em 2em 2em;
+                padding: 1em 1em 1em 1em;
                 transform: translate(-40vw, 0%);
                 position: absolute;   
+
             }
             
             .element1 img:hover {
@@ -470,7 +470,44 @@ position: relative;
     // background-color:#cdcdcd;
 }
 
+.s3 .webWork {
+    box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+    background-image:url("assets/10squares-site.jpg")
+}
 
+.s4 .logoWork {
+        top: -10em;
+        width: 40%;
+        
+    
+        img {
+        width: 55%;
+        padding: 1em;
+        background-color: #fdfdfd;
+        border: solid .4em #333;
+        margin-left: 34em;
+        box-shadow: -2em 1em 2em -1em #33333340;
+    }
+}
+
+.s4 .webWork {
+    box-shadow: 1px -5em 50em -16px rgba(0, 0, 0, 0.5) inset;
+    background-image:url("assets/gubba-site.jpg")
+    
+}
+
+.s4 .sCol2 .info p {
+    width: 30em;
+}
+
+.s4 .platform1:hover {
+        margin-bottom: 18vh;
+    }
+
+.webWork:hover { 
+    overflow-y: scroll;
+    box-shadow: 1px -99px 60px -16px rgba(0,0,0,0) inset;
+}
 
 
 
