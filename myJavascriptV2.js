@@ -102,12 +102,45 @@ $(function () {
         });
 
 
+        // var aSections = ['.section1','.section2','.section3']
+        // var aTL = [];
+        // for (let i = 0; i < aSections.length; i++) {
+        //     var sSection = aSections[i];
+
+
+        //     var tl = anime.timeline({
+        //         easing:'linear',
+        //         autoplay:false,
+        //         duration:1000,
+        //         direction: 'alternate',
+        //         loop: true,
+            
+        //     });
+
+        //     tl.add ({
+        //         targets:sSection,
+        //         marginTop:['0vh','10vh'],
+        //         opacity:[1,.7],
+        //         scale:[1,.9],
+        //     },0);
+
+        //     tl.add ({
+        //         targets:sSection+' .element1',
+        //         top:['-25vh','-30vh'],
+        //     },0);
+        //     aTL.push(tl);
+            
+        // }
+
+
+
         var tl2 = anime.timeline({
             easing:'linear',
             autoplay:false,
             duration:1000,
             direction: 'alternate',
             loop: true,
+        
         });
         
         tl2.add ({
